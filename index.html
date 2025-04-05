@@ -3,44 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Конструктор портфолио</title>
-    <link rel="stylesheet" href="style.css">
+    <title>PortfolioGen — Создай стильное портфолио</title>
 </head>
 <body>
-    <div class="container">
-        <h1>📁 Создайте своё портфолио</h1>
-        <p>Заполните данные, и мы сгенерируем для вас стильное портфолио!</p>
-        
-        <form id="portfolio-form">
-            <div class="form-group">
-                <label for="name">Ваше имя:</label>
-                <input type="text" id="name" required placeholder="Иван Иванов">
-            </div>
+    <!-- Hero-секция -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Создай портфолио, которое запомнят</h1>
+            <p>Профессиональный конструктор с анимациями и презентацией</p>
+            <a href="#start" class="btn btn-primary">Начать создание</a>
+        </div>
+        <div class="hero-scroll">
+            <span>Листайте вниз</span>
+            <div class="scroll-icon"></div>
+        </div>
+    </section>
 
+    <!-- Форма для генерации портфолио -->
+    <section id="start" class="form-section">
+        <h2>Создайте своё портфолио</h2>
+        <form id="portfolio-form" class="portfolio-form">
             <div class="form-group">
-                <label for="job">Профессия:</label>
-                <input type="text" id="job" required placeholder="Веб-разработчик">
+                <input type="text" id="name" required placeholder="Ваше имя">
             </div>
-
             <div class="form-group">
-                <label for="about">О себе:</label>
-                <textarea id="about" required placeholder="Расскажите о своих навыках..."></textarea>
+                <input type="text" id="job" required placeholder="Ваша профессия">
             </div>
-
             <div class="form-group">
-                <label for="projects">Ваши проекты (через запятую):</label>
-                <input type="text" id="projects" required placeholder="Сайт магазина, Лендинг, Блог">
+                <textarea id="about" required placeholder="Расскажите о себе..."></textarea>
             </div>
-
             <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" required placeholder="example@mail.com">
+                <input type="text" id="projects" required placeholder="Ваши проекты (через запятую)">
             </div>
-
-            <button type="submit" class="btn">Сгенерировать портфолио</button>
+            <button type="submit" class="btn btn-generate">Сгенерировать портфолио</button>
         </form>
-    </div>
-
-    <script src="script.js"></script>
+    </section>
 </body>
 </html>
