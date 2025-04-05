@@ -2,16 +2,39 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ваше портфолио</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="portfolio">
-        <h1 id="portfolio-title"></h1>
+    <div class="portfolio-container">
+        <header>
+            <h1 id="portfolio-name">Имя Фамилия</h1>
+            <p id="portfolio-job">Профессия</p>
+        </header>
+
+        <main>
+            <section id="portfolio-about">
+                <h2>Обо мне</h2>
+                <p id="about-text">Текст о себе...</p>
+            </section>
+
+            <section id="portfolio-projects">
+                <h2>Мои проекты</h2>
+                <ul id="projects-list"></ul>
+            </section>
+
+            <section id="portfolio-contact">
+                <h2>Контакты</h2>
+                <p>Email: <span id="contact-email">example@mail.com</span></p>
+            </section>
+        </main>
+
+        <footer>
+            <p>© <span id="current-year"></span> Моё портфолио</p>
+        </footer>
     </div>
-    <script>
-        document.getElementById("portfolio-title").textContent = 
-            sessionStorage.getItem("portfolioName") || "Портфолио";
-    </script>
+
+    <script src="portfolio-script.js"></script>
 </body>
 </html>
