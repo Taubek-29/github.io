@@ -1,0 +1,16 @@
+.search_form { 
+    display: flex;
+    align-items: center;
+    column-gap: .5rem;
+    background-color:
+    var(--container-color);
+    box-shadow: hsla (230, 75%, 15%, .2);
+    padding-inline: 1rem;
+    border-radius: .5rem;
+    transform: translateY(-1rem); 
+    transition: transform .4s;
+}
+.search_icon {
+    font-size: 1.25rem;
+    color: var(--title-color);
+}
