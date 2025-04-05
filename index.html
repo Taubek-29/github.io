@@ -3,10 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мой сайт</title>
+    <title>Конструктор портфолио</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Привет, мир!</h1>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Создайте своё портфолио</h1>
+            <a href="#form" class="btn">Начать</a>
+        </div>
+    </section>
+
+    <section id="form" class="form-section">
+        <form id="portfolio-form">
+            <!-- Поля формы -->
+            <input type="text" id="name" placeholder="Ваше имя" required>
+            <button type="submit">Сгенерировать</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
